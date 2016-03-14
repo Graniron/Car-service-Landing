@@ -1,0 +1,374 @@
+/*General styles*/
+body {
+	min-width: 1160px;
+	position: relative;
+	font-family: 'Roboto', sans-serif;
+}
+
+header,
+main {
+	width: 1160px;
+	min-width: 1160px;
+	margin: 0 auto;
+}
+
+footer {
+	width: 100%;
+	max-width: 2394px;
+	min-width: 1160px;
+	background: #e8e8e8;
+}
+
+ul {
+   list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: 7px;
+}
+/*End of general style*/
+
+/*Header style*/
+header {
+	height: 95px;	
+	margin-top: 12px;
+}
+
+.main_nav ul {
+	margin-top: 25px;
+	margin-left: -50px;
+}
+
+
+.nav li {
+	a {
+		line-height: 20px;
+		color: black;
+		text-decoration: none;
+		&:hover {
+			color: #1184bb;
+		}
+	}
+}
+.main_nav li:first-child {
+	margin-left: -20px;
+}
+
+.contacts {
+	border: 1px solid lightgrey;
+	background: #f0f0f0;	
+}
+
+.ct_nav {
+	float: right;
+	height: 109px;
+	width: 310px;
+	margin-bottom: -9px;
+	margin-top: -12px;
+}
+
+.tel {
+	padding: 10px;
+	background: white;
+}
+
+.tel_number {
+	font-size: 18px;
+	line-height: 19px;
+	margin: 10px;
+	&:before {
+		font-family: FontAwesome;
+		content: "\f095";
+		margin-right: 10px;
+	}
+}
+
+.callback {
+	background: #0080bf;
+	color: white;
+	font-size: 13px;
+	line-height: 12px;
+	height: 33px;
+	width: 81px;
+	padding: 0;
+}
+
+.location {
+	font-size: 13px;
+	margin-left: 10px;
+	padding: 10px;
+	line-height: 12px;
+	.adress:before {
+		font-family: FontAwesome;
+		content: "\f041";
+		margin-right: 12px;
+	}
+	.work_hours:before {
+		font-family: FontAwesome;
+		content: "\f017";
+		margin-right: 10px;
+	}
+}
+
+.lines {
+	clear: both;	
+}
+
+#line_blue {
+	border-top: 5px solid #59acf3;
+	margin: 0;
+}
+
+#line_darkblue {
+	border-top: 5px solid #185096;
+	margin: 0;
+}
+
+#line_red {
+	border-top: 5px solid #e41115;
+	margin: 0;
+}
+
+
+/*Styling of Main*/
+
+/*Aside style*/
+aside {
+	margin-top: 7px;
+	margin-left: -13px;	
+	border-right: 1px solid lightgrey;
+	h2 {
+		font-size: 24px;
+	}
+}
+.services {
+	margin-left: -37px;
+}
+.service {
+	margin-top: 20px;
+	width: 270px;
+	height: 40px;
+	padding-top: 5px;
+	&:hover {
+		background: #ebebeb;
+	}
+	a {
+		color: black;
+		font-size: 15px;
+		line-height: 25px;
+	}
+}
+
+.service a:before {
+	content: "";
+	background: url(../images/sprite.png);
+	/*background: url(1.png);*/
+	float: left;	
+	width: 40px;
+	height: 40px;
+	margin-right: 25px;
+	margin-top: -5px;
+
+}
+
+.body_fix_serv a:before {
+	background-position: 0 -40px;
+}
+.electro_serv a:before {
+	background-position: 0 -80px;
+}
+.tech_serv a:before {
+	background-position: 0 -120px;
+}
+.other_serv a:before {
+	background-position: 0 -160px;
+}
+.wheel_serv a:before {
+	background-position: 0 -200px;
+}
+.tuning_serv a:before {
+	background-position: 0 -240px;
+}
+.auto_music_serv a:before {
+	background-position: 0 -280px;
+}
+
+.coupon {
+	text-align: center;
+	margin-top: 50px;
+	position: relative;
+	border: 1px dashed grey;
+	width: 179px;
+	height: 276px;
+	h2 {
+		font-size: 26px;
+		margin-bottom: 20px;
+		background: url(../images/coupon-bg.jpg) no-repeat 80px 1px;
+		background-size: 50%;
+	}
+	p {
+		font-weight: bold;
+	}
+}
+
+.coupon_scissors {
+	position: absolute;
+	top: -10px;
+	left: 28px;
+}
+
+.coupon_persentage {
+	color: white;
+}
+
+.aside_location {
+	background: #efefef;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	p {
+		font-size: 15px;
+	}
+}
+
+/*Main section Main_information style */
+
+.main_information {
+	padding-left: 0;
+	position: relative;
+	left: -26px;
+
+	.list_all_serv {
+		list-style: square outside; 
+		margin-bottom: 25px;
+		li {
+	     	width: 50%;
+	     	float: left;
+    	 }
+	}
+}
+.accent {
+	background: #135aa4;
+	color: white;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.about {
+	margin-bottom: 40px;
+}
+
+/*Table style*/
+
+.price_list {
+	width: 100%;
+	border: 1px solid #dfdfdf;
+	.table_head {
+		background: #3d3d3d;
+		color: white;		
+	}
+	tr {
+		height: 71px;
+		.col1 {
+			width:50%;
+			padding-left: 20px;
+		}
+		
+		td.col3 {
+			border-left: 1px solid #dfdfdf;			
+		}
+
+		.col2,
+		.col3 {
+			text-align: center;
+		}
+	}
+
+	tr:nth-child(3),
+	tr:nth-child(5) {
+		background: #efefef;
+	}
+}
+
+/*SLIDER buttons*/
+
+.slider {
+	background: #efefef;
+	margin-bottom: 40px;
+
+}
+.slider h2 {
+	margin-bottom: 30px;
+	margin-top: 50px;
+}
+
+.owl-nav {
+	position: relative;
+	font-size: 46px;
+}
+
+.owl-prev {
+	position: absolute;
+	top: -120px;
+	left: -40px;	
+}
+
+.owl-next {
+	position: absolute;
+	top: -120px;
+	right: -40px;	
+}
+
+
+/*Another cars support logos STYLE*/
+
+.another_support_cars_logos img {
+	filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+	-moz-filter: grayscale(1);
+	-o-filter: grayscale(1);
+	-ms-filter: grayscale(1);
+}
+
+.another_support_cars_logos {
+	width: 100%;
+	height: 100px;
+	margin-bottom: 130px;
+}
+
+
+/* Footer */
+footer {
+	position: absolute;
+	height: 97px;
+	bottom: 0;
+	padding-top: 20px;
+}
+
+.social a {
+	color: #717171;
+	&:hover {
+		color: lightblue;
+	}
+}
+
+.social {
+	float: left;
+	margin-right: 200px;
+	margin-left: 55px;
+	margin-bottom: 20px;
+}
+
+footer .ct_nav {
+	position: absolute;
+	right: 100px;
+	bottom: 10px;
+}
+
+.trade_mark {
+	color: #1f8abd;
+}
